@@ -22,3 +22,22 @@ html {
     height: 3px;
     background: #ccc3;
 }
+
+
+
+/* custom style for swiperjs */
+.top-slider .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    border-radius: 50rem;
+    transition: all 0.3s linear;
+}
+.top-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 16px;
+    height: 6px;
+    background-color: #fff;
+}
+.top-slider-pagination {
+    width: fit-content !important;
+    left: 21px !important;
+}
