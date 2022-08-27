@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>دیجی کالا</title>
     <!-- Link fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,37 +15,39 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body dir="rtl">
-    <div class="w-full">
-        <a href="javascript:void(0)">
-            <img src="assets/img/bt1.jpg" alt="bt1" class="h-[35px] w-full object-cover">
-        </a>
-    </div>
-    <header class="p-4">
-        <div class="flex items-center justify-between border-b-[1px] border-b-slate-200 pb-2">
-            <i class="fa-solid fa-bars"></i>
-            <img src="assets/img/logo.svg" alt="logo" class="h-6">
-            <i class="fa-regular fa-circle-question"></i>
-        </div>
-        <div class="flex items-center justify-start gap-4 py-3 border-b-[1px] border-b-slate-200">
-            <form action="javascript:void(0)" class="w-full">
-                <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full">
-                    <button type="submit" class="px-3 py-2 flex" title="سرچ کن">
-                        <i class="fa fa-magnifying-glass text-gray-400"></i>
-                    </button>
-                    <input type="text" class="bg-transparent w-full outline-none text-xs pl-3 py-3" placeholder="جستجو">
-                </div>
-            </form>
-            <a href="javascript:void(0)" class="px-4 flex">
-                <i class="fa fa-user text-gray-500 text-xl"></i>
-            </a>
-            <a href="javascript:void(0)" class="flex">
-                <i class="fa fa-cart-shopping text-gray-500 text-xl"></i>
+    <header>
+        <div class="w-full">
+            <a href="javascript:void(0)">
+                <img src="assets/img/bt1.jpg" alt="bt1" class="h-[35px] w-full object-cover">
             </a>
         </div>
-        <div class="flex items-center justify-start gap-2 pt-3">
-            <i class="fa fa-location-dot text-orange-400"></i>
-            <span class="text-[11px]">ارسال به خراسان رضوی، مشهد</span>
-            <i class="fa-solid fa-chevron-left mr-auto text-xs"></i>
+        <div class="p-4">
+            <div class="flex items-center justify-between border-b-[1px] border-b-slate-200 pb-2">
+                <i class="fa-solid fa-bars"></i>
+                <img src="assets/img/logo.svg" alt="logo" class="h-6">
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+            <div class="flex items-center justify-start gap-4 py-3 border-b-[1px] border-b-slate-200">
+                <form action="javascript:void(0)" class="w-full">
+                    <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full">
+                        <button type="submit" class="px-3 py-2 flex" title="سرچ کن">
+                            <i class="fa fa-magnifying-glass text-gray-400"></i>
+                        </button>
+                        <input type="text" class="bg-transparent w-full outline-none text-xs pl-3 py-3" placeholder="جستجو">
+                    </div>
+                </form>
+                <a href="javascript:void(0)" class="px-4 flex">
+                    <i class="fa fa-user text-gray-500 text-xl"></i>
+                </a>
+                <a href="javascript:void(0)" class="flex">
+                    <i class="fa fa-cart-shopping text-gray-500 text-xl"></i>
+                </a>
+            </div>
+            <div class="flex items-center justify-start gap-2 pt-3">
+                <i class="fa fa-location-dot text-orange-400"></i>
+                <span class="text-[11px]">ارسال به خراسان رضوی، مشهد</span>
+                <i class="fa-solid fa-chevron-left mr-auto text-xs"></i>
+            </div>
         </div>
     </header>
     <main>
@@ -816,7 +818,7 @@
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
         </div>
-        <div class="p-4 border-b-[1px]">
+        <div class="p-4">
             <h3 class="text-sm flex items-center justify-between mb-6">
                 خواندنی‌ها
                 <a href="javascript:void(0)" class="text-blue-400">مطالب بیشتر در دیجی‌کالا مگ</a>
@@ -841,16 +843,216 @@
             </div>
         </div>
     </main>
-    <footer class="border-t-[1px] border-slate-200 p-4">
-        <div class="flex items-center justify-between">
-            <img src="assets/img/digi.svg" alt="digi" class="h-7">
-            <!-- <button class="px-4 py-2 flex text-xs items-center justify-center gap-3 text-gray-200 border-[1px] border-gray-200 rounded-lg">
-                بازگشت به بالا
-                <i class="fa fa-thin fa-top text-lg"></i>
-            </button> -->
+    <footer class="border-t-[1px] border-slate-200 pt-4 mt-10">
+        <div class="p-4 flex flex-col items-start justify-start gap-6">
+            <div class="w-full flex items-center justify-between">
+                <img src="assets/img/digi.svg" alt="digi" class="h-7">
+                <button class="px-4 py-2 flex text-xs items-center justify-center gap-3 text-gray-400 border-[1px] border-gray-300 rounded-lg" onclick="backToTop()">
+                    بازگشت به بالا
+                    <i class="fa-solid fa-angle-up"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="text-[11px] text-gray-600">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</span>
+                <span class="text-[11px] text-gray-600">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span>
+            </div>
+            <div class="w-full grid grid-cols-2 grid-rows-1">
+                <div class="flex flex-col items-start justify-start gap-4">
+                    <span class="text-[14px]">با دیجی‌کالا</span>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        اتاق خبر دیجی‌کالا
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        فروش در دیجی‌کالا
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        فرصت‌های شغلی
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        گزارش تخلف در دیجی‌کالا
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        تماس با دیجی‌کالا
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        درباره دیجی‌کالا
+                    </a>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-4">
+                    <span class="text-[14px]">خدمات مشتریان</span>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        پاسخ به پرسش‌های متداول
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        رویه‌های بازگرداندن کالا
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        شرایط استفاده
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        حریم خصوصی
+                    </a>
+                    <a href="javascript:void(0)" class="text-xs text-gray-500">
+                        گزارش باگ
+                    </a>
+                </div>
+            </div>
+            <div class="w-full flex items-center justify-start gap-6">
+                <span class="text-[14px]">همراه ما باشید!</span>
+                <a href="javascript:void(0)" class="mr-auto">
+                    <i class="fa-brands fa-instagram text-[27px] text-gray-400"></i>
+                </a>
+                <a href="javascript:void(0)">
+                    <i class="fa-brands fa-linkedin text-[27px] text-gray-400"></i>
+                </a>
+                <a href="javascript:void(0)">
+                    <i class="fa-brands fa-twitter text-[27px] text-gray-400"></i>
+                </a>
+                <a href="javascript:void(0)">
+                    <i class="fa-brands fa-telegram text-[27px] text-gray-400"></i>
+                </a>
+            </div>
+            <div class="w-full">
+                <form action="javascript:void(0)" class="flex items-center justify-start gap-3">
+                    <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full">
+                        <input type="text" class="bg-transparent w-full outline-none text-sm p-3" placeholder="جستجو">
+                    </div>
+                    <button type="submit" disabled class="p-3 text-sm disabled:bg-gray-300 bg-[#ef394e] rounded-lg text-white">
+                        ثبت
+                    </button>
+                </form>
+                <!-- <span class="text-[10px] text-red-700">این فیلد نمی‌تواند خالی باشد</span> -->
+            </div>
+            <div class="bg-[#3c4b6d] rounded-lg p-3 w-full">
+                <h4 class="flex items-center justify-center gap-3 text-white text-lg">
+                    <img src="assets/img/footerlogo2.png" alt="footerlogo2" class="w-7 ">
+                    دانلود اپلیکیشن دیجی‌کالا
+                </h4>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 p-4 mt-3">
+                    <a href="javascript:void(0)" class="flex">
+                        <img src="assets/img/google-play.svg" alt="google play" class="w-full">
+                    </a>
+                    <a href="javascript:void(0)" class="flex">
+                        <img src="assets/img/coffe-bazzar.svg" alt="coffe bazzar" class="w-full">
+                    </a>
+                    <a href="javascript:void(0)" class="flex">
+                        <img src="assets/img/myket.svg" alt="myket" class="w-full">
+                    </a>
+                    <a href="javascript:void(0)" class="flex">
+                        <img src="assets/img/sib-app.svg" alt="sib app" class="w-full">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-white">
+                    اطلاعات بیشتر
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="flex flex-col items-start justify-start gap-2 border-t-[1px] border-slate-200 pt-6">
+                <h4 class="text-xs font-bold">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                </p>
+                <!-- <h4 class="text-xs font-bold">کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز یا در روزهای خاصی مثل حراج شگفت انگیز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم.
+                </p>
+                <h4 class="text-xs font-bold">کالای دیجیتال</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+                </p>
+                <h4 class="text-xs font-bold">خودرو، ابزار و تجهیزات صنعتی</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.
+                </p>
+                <h4 class="text-xs font-bold">مد و پوشاک</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+                </p>
+                <h4 class="text-xs font-bold">ورزش و سفر</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ و کوهنوردی، ساک و قمقمه ورزشی و... در این بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر اساس نوع ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های دیجی‌کالا پیدا کنید.
+                </p>
+                <h4 class="text-xs font-bold">محصولات بومی و محلی</h4>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به سفره هفت‌سین  و پذیرایی از مهمانان در روزهای نوروز، انواع آیینه و شمعدان و هر آن چیزی را که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت مناسب و تنوع بسیار بالا انتخاب کنید. دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه کند، تقویم ۱۴۰۱، انواع ایده عکس پروفایل عید نوروز، آهنگ‌های عید نوروز و موزیک‌های شاد بهاری، وسایل مربوط به خانه‌تکانی و انواع لباس های عید  را برای شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و هوای تازه نهایت لذت را ببرید.
+                </p>
+                <p class="text-[11px] text-gray-500 leading-6">
+                    در راستای توجه ویژه به شفافیت به عنوان یکی از اصلی‌ترین ارزش‌های محوری دیجی‌کالا، با شروع سال ۱۳۹۸ داستان‌پردازی با داده‌های آماری و ارائه گزارش‌های سالانه آغاز شد. مسیری که دستاورد آن تا امروز چندین گزارش سالانه و تخصصی مثل گزارش سالانه ۱۳۹۸، گزارش سالانه ۱۳۹۹ و گزارش سالانه ۱۴۰۰  دیجی‌کالا هستند. علاوه بر این، گزارش منابع انسانی سال ۱۳۹۹، گزارش منابع انسانی سال ۱۴۰۰  و همچنین گزارش کتاب دیجی‌کالا، از دیگر گزارش‌های تخصصی دیجی‌کالا به حساب می‌آیند. انتشار این گزارش‌ها امکان رصد شفاف‌تر و دقیق‌تر خدمات دیجی‌کالا را فراهم می‌کند، وضعیت بازار آنلاین کشور را به نمایش می‌گذارد و به تمامی کسب‌وکارهای ایرانی کمک می‌کند تا با فرایندهای فروش و عرضه آنلاین کالاهای خود بیشتر آشنا شوند.
+                </p> -->
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    اطلاعات بیشتر
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="w-full flex items-center justify-center gap-2 border-b-[1px] border-slate-200 pb-6">
+                <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
+                    <img src="assets/img/rezi.png" alt="rezi" class="h-20 object-cover">
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
+                    <img src="assets/img/kasbokar.png" alt="kasbokar" class="h-20 object-cover">
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
+                    <img src="assets/img/enamad.png" alt="enamad" class="h-20 object-cover">
+                </a>
+            </div>
+            <p class="text-[10px] text-gray-500 leading-5">
+                برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست.
+                <br>
+                تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+            </p>
+        </div>
+        <div class="grid grid-cols-3 grid-row-6 gap-px bg-gray-300">
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digiMehr.svg" alt="digiMehr" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/magnet.svg" alt="magnet" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/jet.svg" alt="jet" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digistyle.svg" alt="digistyle" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digipay.svg" alt="digipay" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digimag.svg" alt="digimag" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digikala-business.svg" alt="digikala business" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/fidibo.svg" alt="fidibo" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digiclub.svg" alt="digiclub" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digiplus.svg" alt="digiplus" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/komoda.svg" alt="komoda" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/pindo.svg" alt="pindo" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/diginext.svg" alt="diginext" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/ganjeh.svg" alt="ganjeh" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
+                <img src="assets/img/digiexpress.svg" alt="digiexpress" class="h-5 max-w-full object-contain">
+            </a>
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4 col-span-full">
+                <img src="assets/img/digiaffiliate.svg" alt="digiaffiliate" class="h-5 max-w-full object-contain">
+            </a>
         </div>
     </footer>
-    <div class="w-full h-full fixed left-0 top-0 bg-black/30 z-10 flex items-end justify-center" onclick="setLocation(event)">
+    <div class="w-full h-full fixed left-0 top-0 bg-black/30 z-10 hidden items-end justify-center" onclick="hidd(event)">
         <div class="w-full bg-white rounded-t-2xl p-4">
             <h3 class="flex items-center justify-between text-sm border-b-[1px] border-slate-200 pb-4">
                 انتخاب آدرس
@@ -868,6 +1070,51 @@
                 <li class="flex items-center justify-start gap-4 text-xs text-[#19bfd3]">
                     <i class="fa-solid fa-circle-plus text-xl mr-[2px]"></i>
                     افزودن آدرس
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-full h-full fixed left-0 top-0 bg-black/40 z-10 flex items-start justify-start" onclick="hidd(event)">
+        <div class="h-full w-80 bg-white p-6">
+            <a href="/">
+                <img src="assets/img/digi.svg" alt="digi" class="h-6">
+            </a>
+            <ul class="list-none flex flex-col items-start justify-start gap-6 py-6 my-6 border-y-[1px] border-slate-200">
+                <li>
+                    <a href="javascript:void(0)" class="flex items-center justify-start gap-4 text-gray-600 text-[13px]">
+                        <i class="fa-solid fa-box-open text-gray-400 text-base"></i>
+                        سوپرمارکت
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="flex items-center justify-start gap-4 text-gray-600 text-[13px]">
+                        <i class="fa fa-fire-flame-curved text-gray-400 text-base"></i>
+                        پرفروش‌ترین‌ها
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="flex items-center justify-start gap-4 text-gray-600 text-[13px]">
+                        <i class="fa-solid fa-percent text-gray-400 text-base"></i>
+                        تخفیف‌ها و پیشنهادها
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="flex items-center justify-start gap-4 text-gray-600 text-[13px]">
+                        <i class="fa-solid fa-tag text-gray-400 text-base"></i>
+                        شگفت‌انگیزها
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="flex items-center justify-start gap-4 text-gray-600 text-[13px]">
+                        <i class="fa-solid fa-circle-question text-gray-400 text-base"></i>
+                        سوالی دارید؟
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="flex items-center justify-start gap-4 text-gray-600 text-[13px]">
+                        <i class="fa-solid fa-shop text-gray-400 text-base"></i>
+                        فروشنده شوید
+                    </a>
                 </li>
             </ul>
         </div>
