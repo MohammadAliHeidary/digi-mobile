@@ -8,6 +8,15 @@ var swiper = new Swiper(".top-slider", {
         disableOnInteraction: false,
     }
 });
+var productSlider = new Swiper(".product-slider", {
+    pagination: {
+        el: ".product-slider-pagination",
+    },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    }
+});
 
 function backToTop() {
     window.scrollTo({

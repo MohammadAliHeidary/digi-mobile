@@ -37,7 +37,22 @@ html {
     height: 6px;
     background-color: #fff;
 }
-.top-slider-pagination {
+.top-slider-pagination,
+.product-slider-pagination {
     width: fit-content !important;
     left: 21px !important;
+}
+.product-slider .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    border-radius: 50rem;
+    transition: all 0.3s linear;
+    background-color: #ccc !important;
+    opacity: 1 !important;
+}
+.product-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 6px;
+    height: 6px;
+    background-color: #ccc;
+    transform: translateY(1px);
 }

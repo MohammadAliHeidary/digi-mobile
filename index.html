@@ -15,21 +15,26 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body dir="rtl">
-    <header>
+    <header class="lg:sticky lg:top-0 lg:left-0 lg:bg-white lg:z-50 border-b-[1px] border-gray-300">
         <div class="w-full">
             <a href="javascript:void(0)">
-                <img src="assets/img/bt1.jpg" alt="bt1" class="h-[35px] w-full object-cover">
+                <img src="assets/img/bt1.jpg" alt="bt1" class="h-[35px] w-full object-cover lg:h-16">
             </a>
         </div>
         <div class="p-4">
-            <div class="flex items-center justify-between border-b-[1px] border-b-slate-200 pb-2">
+            <div class="flex items-center justify-between border-b-[1px] border-b-slate-200 pb-2 lg:hidden">
                 <i class="fa-solid fa-bars"></i>
-                <img src="assets/img/logo.svg" alt="logo" class="h-6">
+                <a href="javascript:void(0)">
+                    <img src="assets/img/logo.svg" alt="logo" class="h-6">
+                </a>
                 <i class="fa-regular fa-circle-question"></i>
             </div>
-            <div class="flex items-center justify-start gap-4 py-3 border-b-[1px] border-b-slate-200">
+            <div class="flex items-center justify-start gap-4 py-3 border-b-[1px] border-b-slate-200 lg:pt-0">
+                <a href="javascript:void(0)" class="hidden lg:inline">
+                    <img src="assets/img/logo.svg" alt="logo" class="h-9">
+                </a>
                 <form action="javascript:void(0)" class="w-full">
-                    <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full">
+                    <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full max-w-xl">
                         <button type="submit" class="px-3 py-2 flex" title="سرچ کن">
                             <i class="fa fa-magnifying-glass text-gray-400"></i>
                         </button>
@@ -55,28 +60,28 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                    <img src="assets/img/st1.jpg" alt="st1" class="w-full h-64 object-cover">
+                    <img src="assets/img/st1.jpg" alt="st1" class="w-full h-64 lg:h-96 object-cover">
                 </a>
                 </div>
                 <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                    <img src="assets/img/st2.jpg" alt="st2" class="w-full h-64 object-cover">
+                    <img src="assets/img/st2.jpg" alt="st2" class="w-full h-64 lg:h-96 object-cover">
                 </a>
                 </div>
                 <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                    <img src="assets/img/st3.gif" alt="st3" class="w-full h-64 object-cover">
+                    <img src="assets/img/st3.gif" alt="st3" class="w-full h-64 lg:h-96 object-cover">
                 </a>
                 </div>
                 <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                    <img src="assets/img/st4.jpg" alt="st4" class="w-full h-64 object-cover">
+                    <img src="assets/img/st4.jpg" alt="st4" class="w-full h-64 lg:h-96 object-cover">
                 </a>
                 </div>
             </div>
             <div class="swiper-pagination top-slider-pagination w-fit"></div>
         </div>
-        <div class="p-4 grid grid-cols-4 grid-rows-2 gap-3 text-center text-[10px]">
+        <div class="p-4 grid grid-cols-4 grid-rows-2 lg:grid-cols-8 lg:grid-rows-1 gap-3 text-center text-[10px] lg:text-[11px] lg:py-8 lg:max-w-7xl lg:mx-auto">
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
                 <img src="assets/img/dkj.png" alt="دیجی کالا جت" class="w-13">
                 <span>دیجی کالا جت</span>
@@ -112,8 +117,8 @@
                 <span>بیشتر</span>
             </a>
         </div>
-        <div class="bg-amazing py-4 overflow-x-auto dragscroll">
-            <div class="w-max grid auto-cols-auto grid-cols-8 grid-rows-1 gap-2 px-4">
+        <div class="bg-amazing py-4 overflow-x-auto dragscroll lg:max-w-7xl lg:rounded-lg lg:mx-auto lg:border-2 lg:border-[#ef394e]">
+            <div class="w-max grid grid-cols-11 grid-rows-1 gap-1 px-4">
                 <div class="flex flex-col items-center justify-center w-36">
                     <img src="assets/img/amazing-typo.svg" alt="amazing typo" class="w-1/2">
                     <img src="assets/img/box.png" alt="box" class="w-4/5">
@@ -122,10 +127,10 @@
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
                 </div>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full rounded-r-lg flex flex-col items-center justify-start gap-2">
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full rounded-r-lg flex flex-col items-center justify-start gap-2">
                     <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
                     <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
                         <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
                     </div>
                     <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
@@ -134,10 +139,10 @@
                         دارای هدیه نقدی
                     </span>
                 </a>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
                     <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
                     <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
                         <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
                     </div>
                     <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
@@ -145,26 +150,18 @@
                         <span class="inline-block w-3/4 h-full bg-red-500 rounded-full"></span>
                     </div>
                 </a>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
                     <img src="assets/img/dg3.jpg" alt="dg3" class="w-full">
                     <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
                         <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
                     </div>
                     <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
                 </a>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                    <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
                     <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg5.jpg" alt="dg5" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
                         <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
                     </div>
                     <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
@@ -173,10 +170,53 @@
                         دارای هدیه نقدی
                     </span>
                 </a>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                    <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                    </div>
+                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    <div class="w-full bg-gray-200 rounded-full h-1 flex justify-end mt-auto">
+                        <span class="inline-block w-3/4 h-full bg-red-500 rounded-full"></span>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                    <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                    </div>
+                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    <span class="flex items-center justify-start gap-1 text-xs text-purple-700 w-full">
+                        <i class="fa-solid fa-percent"></i>
+                        دارای هدیه نقدی
+                    </span>
+                </a>
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                    <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                    </div>
+                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                </a>
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                    <img src="assets/img/dg5.jpg" alt="dg5" class="w-full">
+                    <div class="w-full flex items-center justify-between">
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                    </div>
+                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    <span class="flex items-center justify-start gap-1 text-xs text-purple-700 w-full">
+                        <i class="fa-solid fa-percent"></i>
+                        دارای هدیه نقدی
+                    </span>
+                </a>
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
                     <img src="assets/img/dg6.jpg" alt="dg6" class="w-full">
                     <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                        <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
                         <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
                     </div>
                     <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
@@ -184,7 +224,7 @@
                         <span class="inline-block w-1/3 h-full bg-red-500 rounded-full"></span>
                     </div>
                 </a>
-                <a href="javascript:void(0)" class="w-40 p-4 bg-white h-full rounded-l-lg flex flex-col items-center justify-center gap-2">
+                <a href="javascript:void(0)" class="w-40 lg:w-44 p-4 bg-white h-full rounded-l-lg flex flex-col items-center justify-center gap-2">
                     <span class="w-13 h-13 border-[1px] border-blue-400 rounded-full flex items-center justify-center text-2xl text-gray-400">
                         <i class="fa fa-thin fa-arrow-left text-lg text-blue-400"></i>
                     </span>
@@ -192,11 +232,12 @@
                 </a>
             </div>
         </div>
-        <div class="p-4">
-            <div class="bg-fresh px-4 py-3 bg-[#f0f0f1] bg-left-center bg-no-repeat rounded-xl flex flex-col items-start justify-start gap-5">
-                <div class="flex items-center justify-start gap-2">
-                    <img src="assets/img/fresh.png" alt="fresh" class="h-10">
-                    <img src="assets/img/fresh.svg" alt="fresh" class="h-5">
+        <div class="p-4 lg:max-w-7xl lg:mx-auto lg:px-0">
+            <div class="bg-fresh px-4 py-3 bg-[#f0f0f1] bg-left-center bg-no-repeat rounded-xl flex flex-col items-start justify-start gap-5 lg:flex-row lg:items-center lg:px-10">
+                <div class="flex items-center justify-start gap-2 w-full lg:gap-4">
+                    <img src="assets/img/fresh.png" alt="fresh" class="h-10 lg:h-16">
+                    <img src="assets/img/fresh.svg" alt="fresh" class="h-5 lg:h-6">
+                    <span class="text-sm bg-[#39ae00] rounded-full text-white px-2 py-1 hidden lg:inline">تا ۳۲٪ تخفیف</span>
                 </div>
                 <div class="flex items-center justify-start gap-2 w-full">
                     <a href="javascript:void(0)" class="bg-white rounded-full p-2 flex relative">
@@ -211,13 +252,26 @@
                         <img src="assets/img/f3.jpg" alt="f3" class="h-13 w-13 rounded-full">
                         <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1 absolute bottom-0 right-0">۱۳٪</span>
                     </a>
-                    <a href="javascript:void(0)" class="bg-white rounded-full p-2 w-12 h-12 flex items-center justify-center mr-auto">
+                    <a href="javascript:void(0)" class="bg-white rounded-full p-2 relative hidden lg:flex">
+                        <img src="assets/img/f2.jpg" alt="f2" class="h-13 w-13 rounded-full">
+                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1 absolute bottom-0 right-0">۱۳٪</span>
+                    </a>
+                    <a href="javascript:void(0)" class="bg-white rounded-full p-2 relative hidden lg:flex">
+                        <img src="assets/img/f3.jpg" alt="f3" class="h-13 w-13 rounded-full">
+                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1 absolute bottom-0 right-0">۱۳٪</span>
+                    </a>
+                    <a href="javascript:void(0)" class="bg-white rounded-full p-2 relative hidden lg:flex">
+                        <img src="assets/img/f2.jpg" alt="f2" class="h-13 w-13 rounded-full">
+                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1 absolute bottom-0 right-0">۱۳٪</span>
+                    </a>
+                    <a href="javascript:void(0)" class="bg-white rounded-full p-2 w-12 h-12 flex items-center justify-center mr-auto lg:w-fit gap-2 lg:px-5">
+                        <span class="text-green-500 hidden lg:inline text-xs">بیش از ۹۰ کالا</span>
                         <i class="fa fa-thin fa-arrow-left text-base text-green-500"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-2 grid-rows-2 gap-4 p-4">
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 p-4 lg:grid-rows-1 lg:grid-cols-4 lg:max-w-7xl lg:mx-auto lg:px-0">
             <a href="javascript:void(0)">
                 <img src="assets/img/b41.jpg" alt="b41" class="rounded-2xl w-full">
             </a>
@@ -232,56 +286,155 @@
             </a>
         </div>
         <h3 class="text-center m-4 text-lg">دسته‌بندی‌های دیجی‌کالا</h3>
-        <div class="p-4 grid grid-cols-3 grid-rows-4 gap-6 text-center text-[11px]">
+        <div class="p-4 grid grid-cols-3 grid-rows-4 gap-6 text-center text-[11px] lg:text-xs lg:grid-cols-5 lg:grid-rows-2 lg:max-w-7xl lg:mx-auto">
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dkd.png" alt="کالای دیجیتال" class="w-90px">
+                <img src="assets/img/dkd.png" alt="کالای دیجیتال" class="w-90px lg:w-44">
                 <span>کالای دیجیتال</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dkh.png" alt="خودرو، ابزار و تجهیزات صنعتی" class="w-90px">
+                <img src="assets/img/dkh.png" alt="خودرو، ابزار و تجهیزات صنعتی" class="w-90px lg:w-44">
                 <span>خودرو، ابزار و تجهیزات صنعتی</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dmp.png" alt="مد و پوشاک" class="w-90px">
+                <img src="assets/img/dmp.png" alt="مد و پوشاک" class="w-90px lg:w-44">
                 <span>مد و پوشاک</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dks.png" alt="کالاهای سوپرمارکتی" class="w-90px">
+                <img src="assets/img/dks.png" alt="کالاهای سوپرمارکتی" class="w-90px lg:w-44">
                 <span>کالاهای سوپرمارکتی</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dab.png" alt="اسباب بازی، کودک و نوزاد" class="w-90px">
+                <img src="assets/img/dab.png" alt="اسباب بازی، کودک و نوزاد" class="w-90px lg:w-44">
                 <span>اسباب بازی، کودک و نوزاد</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dmb.png" alt="محصولات بومی و محلی" class="w-90px">
+                <img src="assets/img/dmb.png" alt="محصولات بومی و محلی" class="w-90px lg:w-44">
                 <span>محصولات بومی و محلی</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dzs.png" alt="زیبایی و سلامت" class="w-90px">
+                <img src="assets/img/dzs.png" alt="زیبایی و سلامت" class="w-90px lg:w-44">
                 <span>زیبایی و سلامت</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dka.png" alt="خانه و آشپزخانه" class="w-90px">
+                <img src="assets/img/dka.png" alt="خانه و آشپزخانه" class="w-90px lg:w-44">
                 <span>خانه و آشپزخانه</span>
             </a>
             <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
-                <img src="assets/img/dkl.png" alt="کتاب، لوازم تحریر و هنر" class="w-90px">
+                <img src="assets/img/dkl.png" alt="کتاب، لوازم تحریر و هنر" class="w-90px lg:w-44">
                 <span>کتاب، لوازم تحریر و هنر</span>
             </a>
-            <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1 col-span-full">
-                <img src="assets/img/dvs.png" alt="ورزش و سفر" class="w-90px">
+            <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1 col-span-full lg:col-span-1">
+                <img src="assets/img/dvs.png" alt="ورزش و سفر" class="w-90px lg:w-44">
                 <span>ورزش و سفر</span>
             </a>
         </div>
-        <div class="grid grid-cols-1 grid-rows-1 gap-4 p-4">
+        <div class="grid grid-cols-1 grid-rows-1 gap-4 p-4 lg:grid-cols-2 lg:max-w-7xl lg:mx-auto lg:px-0">
             <a href="javascript:void(0)">
                 <img src="assets/img/b21.jpg" alt="b21" class="rounded-2xl w-full">
             </a>
+            <a href="javascript:void(0)" class="hidden lg:inline">
+                <img src="assets/img/b23.jpg" alt="b23" class="rounded-2xl w-full">
+            </a>
         </div>
-        <h3 class="text-center m-4 text-lg">پیشنهاد دیجی‌کالا</h3>
-        <div class="border-[1px] border-slate-200 m-4 text-center text-[10px] overflow-auto dragscroll rounded-2xl">
+        <h3 class="text-center m-4 text-lg lg:text-xl">پیشنهاد دیجی‌کالا</h3>
+        <div class="border-[1px] border-slate-200 m-4 text-center text-[10px] overflow-auto dragscroll rounded-2xl lg:max-w-7xl lg:mx-auto">
             <div class="flex flex-col flex-wrap h-100 h-80 w-full">
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-b-[1px] border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pgm.png" alt="گوشی موبایل" class="w-15">
+                    </span>
+                    <span>گوشی موبایل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pkk.png" alt="کیف و کاور گوشی" class="w-15">
+                    </span>
+                    <span>کیف و کاور گوشی</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100 border-b-[1px]">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pks.png" alt="کابل شارژ و مبدل" class="w-15">
+                    </span>
+                    <span>کابل شارژ و مبدل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/phh.png" alt="هدفون، هدست و هندزفری" class="w-15">
+                    </span>
+                    <span>هدفون، هدست و هندزفری</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100 border-b-[1px]">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pgm.png" alt="گوشی موبایل" class="w-15">
+                    </span>
+                    <span>گوشی موبایل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pkk.png" alt="کیف و کاور گوشی" class="w-15">
+                    </span>
+                    <span>کیف و کاور گوشی</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100 border-b-[1px]">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pks.png" alt="کابل شارژ و مبدل" class="w-15">
+                    </span>
+                    <span>کابل شارژ و مبدل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/phh.png" alt="هدفون، هدست و هندزفری" class="w-15">
+                    </span>
+                    <span>هدفون، هدست و هندزفری</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-b-[1px] border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pgm.png" alt="گوشی موبایل" class="w-15">
+                    </span>
+                    <span>گوشی موبایل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pkk.png" alt="کیف و کاور گوشی" class="w-15">
+                    </span>
+                    <span>کیف و کاور گوشی</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100 border-b-[1px]">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pks.png" alt="کابل شارژ و مبدل" class="w-15">
+                    </span>
+                    <span>کابل شارژ و مبدل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/phh.png" alt="هدفون، هدست و هندزفری" class="w-15">
+                    </span>
+                    <span>هدفون، هدست و هندزفری</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100 border-b-[1px]">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pgm.png" alt="گوشی موبایل" class="w-15">
+                    </span>
+                    <span>گوشی موبایل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pkk.png" alt="کیف و کاور گوشی" class="w-15">
+                    </span>
+                    <span>کیف و کاور گوشی</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100 border-b-[1px]">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/pks.png" alt="کابل شارژ و مبدل" class="w-15">
+                    </span>
+                    <span>کابل شارژ و مبدل</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-l-[1px] border-slate-100">
+                    <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
+                        <img src="assets/img/phh.png" alt="هدفون، هدست و هندزفری" class="w-15">
+                    </span>
+                    <span>هدفون، هدست و هندزفری</span>
+                </a>
                 <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-2 w-40 h-40 border-b-[1px] border-l-[1px] border-slate-100">
                     <span class="bg-gray-100 p-3 rounded-full bg-img-transparent relative">
                         <img src="assets/img/pgm.png" alt="گوشی موبایل" class="w-15">
@@ -332,42 +485,71 @@
                 </a>
             </div>
         </div>
-        <h3 class="text-center m-4 text-lg flex items-center justify-center gap-2">
-            <i class="fa-regular fa-star text-yellow-400"></i>
-            محبوب‌ترین برندها
-        </h3>
-        <div class="w-full py-4 overflow-auto dragscroll">
-            <div class="w-max flex items-center justify-start h-16 px-4">
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br1.png" alt="br1" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br2.png" alt="br2" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br3.png" alt="br3" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br4.png" alt="br4" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br5.png" alt="br5" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br6.png" alt="br6" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br7.png" alt="br7" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
-                    <img src="assets/img/br8.jpg" alt="br8" class="w-70px">
-                </a>
-                <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center">
-                    <img src="assets/img/br9.png" alt="br9" class="w-70px">
-                </a>
+        <div class="lg:max-w-7xl lg:mx-auto lg:border-[1px] lg:border-slate-200 lg:rounded-2xl lg:pb-3">
+            <h3 class="text-center m-4 text-lg flex items-center justify-center gap-2 lg:text-xl">
+                <i class="fa-regular fa-star text-yellow-400"></i>
+                محبوب‌ترین برندها
+            </h3>
+            <div class="w-full py-4 overflow-auto dragscroll">
+                <div class="w-max flex items-center justify-start h-16 lg:h-24 px-4">
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br1.png" alt="br1" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br2.png" alt="br2" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br3.png" alt="br3" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br4.png" alt="br4" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br5.png" alt="br5" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br6.png" alt="br6" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br7.png" alt="br7" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br8.jpg" alt="br8" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center">
+                        <img src="assets/img/br9.png" alt="br9" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br1.png" alt="br1" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br2.png" alt="br2" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br3.png" alt="br3" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br4.png" alt="br4" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br5.png" alt="br5" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br6.png" alt="br6" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br7.png" alt="br7" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center border-l-[1px] border-l-slate-200">
+                        <img src="assets/img/br8.jpg" alt="br8" class="w-70px lg:w-28">
+                    </a>
+                    <a href="javascript:void(0)" class="px-4 h-full flex items-center justify-center">
+                        <img src="assets/img/br9.png" alt="br9" class="w-70px lg:w-28">
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 grid-rows-2 gap-4 p-4">
+        <div class="grid grid-cols-1 grid-rows-2 gap-4 p-4 lg:grid-cols-2 lg:grid-rows-1 lg:max-w-7xl lg:mx-auto lg:px-0">
             <a href="javascript:void(0)">
                 <img src="assets/img/b23.jpg" alt="b23" class="rounded-2xl w-full">
             </a>
@@ -375,95 +557,97 @@
                 <img src="assets/img/b24.jpg" alt="b24" class="rounded-2xl w-full">
             </a>
         </div>
-        <div class="p-4 border-b-[1px] border-slate-200">
-            <h3 class="text-base">گوشی موبایل</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g1.jpg" alt="g1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g2.jpg" alt="g2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g3.jpg" alt="g3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g4.jpg" alt="g4" class="w-full p-3 bg-white">
-                </a>
-            </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
-        </div>
-        <div class="p-4 border-b-[1px] border-slate-200">
-            <h3 class="text-base">کیف و کاور گوشی</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c1.jpg" alt="c1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c2.jpg" alt="c2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c3.jpg" alt="c3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c4.jpg" alt="c4" class="w-full p-3 bg-white">
+        <div class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:max-w-7xl lg:mx-auto lg:border-[1px] lg:border-slate-200 lg:rounded-2xl lg:mb-6">
+            <div class="p-4 border-b-[1px] border-slate-200 lg:border-0 lg:border-l-[1px]">
+                <h3 class="text-base">گوشی موبایل</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g1.jpg" alt="g1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g2.jpg" alt="g2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g3.jpg" alt="g3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g4.jpg" alt="g4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
                 </a>
             </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
-        </div>
-        <div class="p-4 border-b-[1px] border-slate-200">
-            <h3 class="text-base">هدفون، هدست و هندزفری</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h1.jpg" alt="h1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h2.jpg" alt="h2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h3.jpg" alt="h3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h4.jpg" alt="h4" class="w-full p-3 bg-white">
-                </a>
-            </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
-        </div>
-        <div class="p-4 mb-8">
-            <h3 class="text-base">ساعت هوشمند</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s1.jpg" alt="s1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s2.jpg" alt="s2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s3.jpg" alt="s3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s4.jpg" alt="s4" class="w-full p-3 bg-white">
+            <div class="p-4 border-b-[1px] border-slate-200 lg:border-0 lg:border-l-[1px]">
+                <h3 class="text-base">کیف و کاور گوشی</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c1.jpg" alt="c1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c2.jpg" alt="c2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c3.jpg" alt="c3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c4.jpg" alt="c4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
                 </a>
             </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
+            <div class="p-4 border-b-[1px] border-slate-200 lg:border-0 lg:border-l-[1px]">
+                <h3 class="text-base">هدفون، هدست و هندزفری</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h1.jpg" alt="h1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h2.jpg" alt="h2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h3.jpg" alt="h3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h4.jpg" alt="h4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="p-4 mb-8 lg:mb-0">
+                <h3 class="text-base">ساعت هوشمند</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s1.jpg" alt="s1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s2.jpg" alt="s2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s3.jpg" alt="s3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s4.jpg" alt="s4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
         </div>
-        <div class="p-4 bg-[#941b80]">
+        <div class="p-4 bg-[#941b80] lg:max-w-7xl lg:mx-auto lg:rounded-2xl lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-1">
             <div class="h-96 py-6 bg-digiplus bg-w100 bg-no-repeat bg-bottom">
                 <a href="javascript:void(0)">
                     <img src="assets/img/digiplus-logo.svg" alt="digiplus logo">
@@ -474,7 +658,7 @@
                     <i class="fa fa-thin fa-arrow-left text-lg"></i>
                 </button>
             </div>
-            <div class="bg-white px-4 py-6 rounded-t-lg font-semibold">
+            <div class="bg-white px-4 py-6 rounded-t-lg font-semibold lg:rounded-tl-none lg:rounded-r-lg lg:my-auto">
                 <h4 class="flex justify-between items-center">
                     <span class="text-sm flex justify-center items-center gap-2">
                         <i class="fa-regular fa-money-bill-1 text-[#941b80] text-lg"></i>
@@ -485,7 +669,7 @@
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
                 </h4>
-                <div class="grid grid-cols-3 grid-rows-1 mt-5">
+                <div class="grid grid-cols-3 grid-rows-1 mt-5 lg:grid-rows-2 lg:gap-y-6">
                     <a href="javascript:void(0)" class="relative">
                         <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
                         <span class="text-[10px] bg-white rounded-full text-[#941b80] px-2 py-1 absolute bottom-0 right-0">
@@ -510,9 +694,33 @@
                             هدیه
                         </span>
                     </a>
+                    <a href="javascript:void(0)" class="relative hidden lg:inline">
+                        <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
+                        <span class="text-[10px] bg-white rounded-full text-[#941b80] px-2 py-1 absolute bottom-0 right-0">
+                            ۵,۱۹۰
+                            <span class="text-[8px]">تومان</span>
+                            هدیه
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)" class="relative hidden lg:inline">
+                        <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
+                        <span class="text-[10px] bg-white rounded-full text-[#941b80] px-2 py-1 absolute bottom-0 right-0">
+                            ۲,۹۰۸
+                            <span class="text-[8px]">تومان</span>
+                            هدیه
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)" class="relative hidden lg:inline">
+                        <img src="assets/img/dg3.jpg" alt="dg3" class="w-full">
+                        <span class="text-[10px] bg-white rounded-full text-[#941b80] px-2 py-1 absolute bottom-0 right-0">
+                            ۶۰۰
+                            <span class="text-[8px]">تومان</span>
+                            هدیه
+                        </span>
+                    </a>
                 </div>
             </div>
-            <div class="bg-white px-4 py-6 rounded-b-lg font-semibold mt-1">
+            <div class="bg-white px-4 py-6 rounded-b-lg font-semibold mt-1 lg:rounded-br-none lg:rounded-l-lg lg:my-auto">
                 <h4 class="flex justify-between items-center">
                     <span class="text-sm flex justify-center items-center gap-2">
                         <i class="fas fa-rocket text-[#941b80] text-lg"></i>
@@ -523,14 +731,9 @@
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
                 </h4>
-                <div class="grid grid-cols-3 grid-rows-1 mt-5">
+                <div class="grid grid-cols-3 grid-rows-1 mt-5 lg:grid-rows-2 lg:gap-y-6">
                     <a href="javascript:void(0)" class="relative">
                         <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
-                        <span class="text-[10px] bg-white rounded-full text-[#941b80] px-2 py-1 absolute bottom-0 right-0">
-                            ۲,۹۰۸
-                            <span class="text-[8px]">تومان</span>
-                            هدیه
-                        </span>
                     </a>
                     <a href="javascript:void(0)" class="relative">
                         <img src="assets/img/dg5.jpg" alt="dg5" class="w-full">
@@ -548,297 +751,380 @@
                             هدیه
                         </span>
                     </a>
+                    <a href="javascript:void(0)" class="relative hidden lg:inline">
+                        <img src="assets/img/dg6.jpg" alt="dg3" class="w-full">
+                    </a>
+                    <a href="javascript:void(0)" class="relative hidden lg:inline">
+                        <img src="assets/img/dg5.jpg" alt="dg5" class="w-full">
+                        <span class="text-[10px] bg-white rounded-full text-[#941b80] px-2 py-1 absolute bottom-0 right-0">
+                            ۵,۱۹۰
+                            <span class="text-[8px]">تومان</span>
+                            هدیه
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)" class="relative hidden lg:inline">
+                        <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="p-4 bg-digiclub my-2">
-            <div class="flex items-center justify-between">
+        <div class="p-4 bg-digiclub my-2 lg:max-w-7xl lg:mx-auto lg:rounded-2xl lg:flex lg:gap-3 lg:items-center lg:justify-center lg:py-2">
+            <div class="flex items-center justify-between gap-2 lg:w-2/5">
                 <img src="assets/img/digiclub-logo-white.svg" alt="digiclub logo white" class="w-28">
-                <span class="flex items-center justify-center gap-1 text-xs text-white">
+                <span class="flex items-center justify-center gap-1 text-xs text-white lg:mr-auto lg:text-sm">
                     امتیاز شما
                     <b class="text-base">۱۰۳</b>
                     <img src="assets/img/club-point.svg" alt="club point" class="w-6">
                 </span>
             </div>
-            <div class="grid grid-cols-3 grid-rows-1 mt-5 gap-1">
-                <a href="javascript:void(0)" class="bg-white p-1 pt-2 rounded-r-lg font-semibold flex flex-col items-center justify-center gap-2">
+            <div class="grid grid-cols-3 grid-rows-1 mt-5 gap-1 mr-auto lg:mt-0 lg:w-3/5">
+                <a href="javascript:void(0)" class="bg-white p-1 pt-2 lg:p-0.5 rounded-r-lg font-semibold flex flex-col items-center justify-center gap-2 lg:flex-row lg:justify-between lg:pr-3">
                     <i class="fa fa-square-plus text-blue-400"></i>
                     <span class="text-xs font-thin">گردونه شانس</span>
-                    <img src="assets/img/lucky-draw.png" alt="lucky draw" class="w-full">
+                    <img src="assets/img/lucky-draw.png" alt="lucky draw" class="w-full lg:w-auto lg:h-16">
                 </a>
-                <a href="javascript:void(0)" class="bg-white p-1 pt-2 font-semibold flex flex-col items-center justify-center gap-2">
+                <a href="javascript:void(0)" class="bg-white p-1 pt-2 lg:p-0.5 font-semibold flex flex-col items-center justify-center gap-2 lg:flex-row lg:justify-between lg:pr-3">
                     <i class="fa fa-bullseye text-blue-400"></i>
                     <span class="text-xs font-thin">ماموریت ها</span>
-                    <img src="assets/img/missions.png" alt="missions" class="w-full">
+                    <img src="assets/img/missions.png" alt="missions" class="w-full lg:w-auto lg:h-16">
                 </a>
-                <a href="javascript:void(0)" class="bg-white p-1 pt-2 rounded-l-lg font-semibold flex flex-col items-center justify-center gap-2">
+                <a href="javascript:void(0)" class="bg-white p-1 pt-2 lg:p-0.5 rounded-l-lg font-semibold flex flex-col items-center justify-center gap-2 lg:flex-row lg:justify-between lg:pr-3">
                     <i class="fa fa-tags text-blue-400"></i>
                     <span class="text-xs font-thin">ماموریت ها</span>
-                    <img src="assets/img/awards.png" alt="awards" class="w-full">
+                    <img src="assets/img/awards.png" alt="awards" class="w-full lg:w-auto lg:h-16">
                 </a>
             </div>
         </div>
-        <div class="p-4 border-b-[1px] border-slate-200">
-            <h3 class="text-base">گوشی موبایل</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g1.jpg" alt="g1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g2.jpg" alt="g2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g3.jpg" alt="g3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/g4.jpg" alt="g4" class="w-full p-3 bg-white">
-                </a>
-            </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
-        </div>
-        <div class="p-4 border-b-[1px] border-slate-200">
-            <h3 class="text-base">کیف و کاور گوشی</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c1.jpg" alt="c1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c2.jpg" alt="c2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c3.jpg" alt="c3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/c4.jpg" alt="c4" class="w-full p-3 bg-white">
+        <div class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:max-w-7xl lg:mx-auto lg:border-[1px] lg:border-slate-200 lg:rounded-2xl lg:mb-6">
+            <div class="p-4 border-b-[1px] border-slate-200 lg:border-0 lg:border-l-[1px]">
+                <h3 class="text-base">گوشی موبایل</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g1.jpg" alt="g1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g2.jpg" alt="g2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g3.jpg" alt="g3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/g4.jpg" alt="g4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
                 </a>
             </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
-        </div>
-        <div class="p-4 border-b-[1px] border-slate-200">
-            <h3 class="text-base">هدفون، هدست و هندزفری</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h1.jpg" alt="h1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h2.jpg" alt="h2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h3.jpg" alt="h3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/h4.jpg" alt="h4" class="w-full p-3 bg-white">
-                </a>
-            </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
-        </div>
-        <div class="p-4">
-            <h3 class="text-base">ساعت هوشمند</h3>
-            <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
-            <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px">
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s1.jpg" alt="s1" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s2.jpg" alt="s2" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s3.jpg" alt="s3" class="w-full p-3 bg-white">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="assets/img/s4.jpg" alt="s4" class="w-full p-3 bg-white">
+            <div class="p-4 border-b-[1px] border-slate-200 lg:border-0 lg:border-l-[1px]">
+                <h3 class="text-base">کیف و کاور گوشی</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c1.jpg" alt="c1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c2.jpg" alt="c2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c3.jpg" alt="c3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/c4.jpg" alt="c4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
                 </a>
             </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده
-                <i class="fa-solid fa-chevron-left"></i>
-            </a>
+            <div class="p-4 border-b-[1px] border-slate-200 lg:border-0 lg:border-l-[1px]">
+                <h3 class="text-base">هدفون، هدست و هندزفری</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h1.jpg" alt="h1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h2.jpg" alt="h2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h3.jpg" alt="h3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/h4.jpg" alt="h4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="p-4">
+                <h3 class="text-base">ساعت هوشمند</h3>
+                <span class="text-xs text-gray-400">بر اساس بازدیدهای شما</span>
+                <div class="bg-slate-200 grid grid-cols-2 grid-rows-2 gap-px lg:mt-4">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s1.jpg" alt="s1" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s2.jpg" alt="s2" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s3.jpg" alt="s3" class="w-full p-3 bg-white">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/s4.jpg" alt="s4" class="w-full p-3 bg-white">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
         </div>
-        <div class="py-4">
-            <h3 class="text-lg flex items-center justify-between mb-6 px-4">
+        <div class="py-4 lg:max-w-7xl lg:mx-auto lg:border-[1px] lg:border-slate-200 lg:rounded-2xl">
+            <h3 class="text-lg lg:text-xl flex items-center justify-between mb-6 px-4 lg:justify-center lg:relative">
                 <span>
-                    <i class="fa fa-fire-flame-curved text-orange-400 text-xl"></i>
+                    <i class="fa fa-fire-flame-curved text-orange-400 text-xl ml-2"></i>
                     پرفروش‌ترین کالاها
                 </span>
-                <a href="javascript:void(0)" class="text-blue-400 text-sm">مشاهده همه</a>
+                <a href="javascript:void(0)" class="text-blue-400 text-sm lg:absolute lg:top-0 lg:left-4">مشاهده همه</a>
             </h3>
             <div class="flex flex-col items-start justify-start gap-y-3 gap-x-6 px-4 flex-wrap max-h-72 overflow-x-auto dragscroll">
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p1.jpg" alt="p1" class="w-20">
                     <b class="text-2xl text-blue-400">۱</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">هندزفری بلوتوثی مدل  inpods 12</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">هندزفری بلوتوثی مدل  inpods 12</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p2.jpg" alt="p2" class="w-20">
                     <b class="text-2xl text-blue-400">۲</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">کنسرو ماهی تون مکنزی در روغن گیاهی - 180 گرم</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">کنسرو ماهی تون مکنزی در روغن گیاهی - 180 گرم</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p3.jpg" alt="p3" class="w-20">
                     <b class="text-2xl text-blue-400">۳</b>
-                    <span class="text-[11px] w-full h-20 leading-4 flex items-center justify-start">اسپاگتی قطر 1.2 زر ماکارون مقدار 700 گرم</span>
+                    <span class="text-[11px] text-xs w-full h-20 leading-4 flex items-center justify-start">اسپاگتی قطر 1.2 زر ماکارون مقدار 700 گرم</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p4.jpg" alt="p4" class="w-20">
                     <b class="text-2xl text-blue-400">۴</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">شکر سفید کامکا - 1 کیلوگرم</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">شکر سفید کامکا - 1 کیلوگرم</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p5.jpg" alt="p5" class="w-20">
                     <b class="text-2xl text-blue-400">۵</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">پوشک بچه هانیز سایز 4 بسته 38 عددی</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">پوشک بچه هانیز سایز 4 بسته 38 عددی</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p6.jpg" alt="p6" class="w-20">
                     <b class="text-2xl text-blue-400">۶</b>
-                    <span class="text-[11px] w-full h-20 leading-4 flex items-center justify-start">مایع ظرفشویی پریل مدل Orange and Grapefruit حجم 3.75 لیتر</span>
+                    <span class="text-[11px] text-xs w-full h-20 leading-4 flex items-center justify-start">مایع ظرفشویی پریل مدل Orange and Grapefruit حجم 3.75 لیتر</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p7.jpg" alt="p7" class="w-20">
                     <b class="text-2xl text-blue-400">۷</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">هدفون بی سیم مدل BTH-F9-5</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">هدفون بی سیم مدل BTH-F9-5</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p8.jpg" alt="p8" class="w-20">
                     <b class="text-2xl text-blue-400">۸</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">گوشی موبایل سامسونگ مدل Galaxy A32 SM-A325F/DS دو سیم‌کارت</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">گوشی موبایل سامسونگ مدل Galaxy A32 SM-A325F/DS دو سیم‌کارت</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p9.jpg" alt="p9" class="w-20">
                     <b class="text-2xl text-blue-400">۹</b>
-                    <span class="text-[11px] w-full h-20 leading-4 flex items-center justify-start">خودکار فوق روان نانو آنتی باکتریال پنتر مدل Dr.Panter کد DP-105_0.7</span>
+                    <span class="text-[11px] text-xs w-full h-20 leading-4 flex items-center justify-start">خودکار فوق روان نانو آنتی باکتریال پنتر مدل Dr.Panter کد DP-105_0.7</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p10.jpg" alt="p10" class="w-20">
                     <b class="text-2xl text-blue-400">۱۰</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">خیار شور سالی - 1.5 کیلوگرم</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">خیار شور سالی - 1.5 کیلوگرم</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p11.jpg" alt="p11" class="w-20">
                     <b class="text-2xl text-blue-400">۱۱</b>
-                    <span class="text-[11px] w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">پد آرایش پاک کن ایپک مدل 01 بسته 70 عددی</span>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">پد آرایش پاک کن ایپک مدل 01 بسته 70 عددی</span>
                 </a>
                 <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
                     <img src="assets/img/p12.jpg" alt="p12" class="w-20">
                     <b class="text-2xl text-blue-400">۱۲</b>
-                    <span class="text-[11px] w-full h-20 leading-4 flex items-center justify-start">فلوئید ضد آفتاب مای مدل Hyaluronic Acid حجم 50 میلی لیتر </span>
+                    <span class="text-[11px] text-xs w-full h-20 leading-4 flex items-center justify-start">فلوئید ضد آفتاب مای مدل Hyaluronic Acid حجم 50 میلی لیتر </span>
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
+                    <img src="assets/img/p10.jpg" alt="p10" class="w-20">
+                    <b class="text-2xl text-blue-400">۱۰</b>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">خیار شور سالی - 1.5 کیلوگرم</span>
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
+                    <img src="assets/img/p11.jpg" alt="p11" class="w-20">
+                    <b class="text-2xl text-blue-400">۱۱</b>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">پد آرایش پاک کن ایپک مدل 01 بسته 70 عددی</span>
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
+                    <img src="assets/img/p12.jpg" alt="p12" class="w-20">
+                    <b class="text-2xl text-blue-400">۱۲</b>
+                    <span class="text-[11px] text-xs w-full h-20 leading-4 flex items-center justify-start">فلوئید ضد آفتاب مای مدل Hyaluronic Acid حجم 50 میلی لیتر </span>
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
+                    <img src="assets/img/p10.jpg" alt="p10" class="w-20">
+                    <b class="text-2xl text-blue-400">۱۰</b>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">خیار شور سالی - 1.5 کیلوگرم</span>
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
+                    <img src="assets/img/p11.jpg" alt="p11" class="w-20">
+                    <b class="text-2xl text-blue-400">۱۱</b>
+                    <span class="text-[11px] text-xs w-full h-20 border-b-[1px] border-slate-200 leading-4 flex items-center justify-start">پد آرایش پاک کن ایپک مدل 01 بسته 70 عددی</span>
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-start gap-2 w-72">
+                    <img src="assets/img/p12.jpg" alt="p12" class="w-20">
+                    <b class="text-2xl text-blue-400">۱۲</b>
+                    <span class="text-[11px] text-xs w-full h-20 leading-4 flex items-center justify-start">فلوئید ضد آفتاب مای مدل Hyaluronic Acid حجم 50 میلی لیتر </span>
                 </a>
             </div>
         </div>
         <div class="p-4">
-            <a href="javascript:void(0)">
+            <a href="javascript:void(0)" class="lg:hidden">
                 <img src="assets/img/b11.jpg" alt="b11" class="w-full rounded-2xl">
             </a>
-        </div>
-        <h3 class="text-lg flex items-center justify-center gap-3 my-4 px-4">
-            <i class="fa-solid fa-bookmark text-red-500 text-xl"></i>
-            منتخب محصولات تخفیف و حراج
-        </h3>
-        <div class="p-4">
-            <div class="bg-slate-100 grid grid-cols-2 grid-rows-4 gap-px">
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg3.jpg" alt="dg3" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg5.jpg" alt="dg5" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg6.jpg" alt="dg6.jpg" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-                <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
-                    <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
-                    <div class="w-full flex items-center justify-between">
-                        <span class="text-[11px] bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
-                        <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
-                    </div>
-                    <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
-                </a>
-            </div>
-            <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                مشاهده بیشتر
-                <i class="fa-solid fa-chevron-left"></i>
+            <a href="javascript:void(0)" class="hidden lg:block">
+                <img src="assets/img/bb1.jpg" alt="bb1" class="w-full rounded-2xl lg:max-w-7xl lg:mx-auto lg:rounded-2xl">
             </a>
         </div>
-        <div class="p-4">
-            <h3 class="text-sm flex items-center justify-between mb-6">
-                خواندنی‌ها
-                <a href="javascript:void(0)" class="text-blue-400">مطالب بیشتر در دیجی‌کالا مگ</a>
+        <div class="lg:max-w-7xl lg:mx-auto lg:border-[1px] lg:border-slate-200 lg:rounded-2xl">
+            <h3 class="text-lg lg:text-xl flex items-center justify-center gap-3 my-4 px-4">
+                <i class="fa-solid fa-bookmark text-red-500 text-xl"></i>
+                منتخب محصولات تخفیف و حراج
             </h3>
-            <div class="grid grid-cols-1 grid-rows-4 gap-3">
+            <div class="p-4">
+                <div class="bg-slate-100 grid grid-cols-2 gap-px lg:grid-cols-6 auto-rows-auto">
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg3.jpg" alt="dg3" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg5.jpg" alt="dg5" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg6.jpg" alt="dg6.jpg" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg1.jpg" alt="dg1" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg2.jpg" alt="dg2" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg3.jpg" alt="dg3" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                    <a href="javascript:void(0)" class="w-full p-4 bg-white h-full flex flex-col items-center justify-start gap-2">
+                        <img src="assets/img/dg4.jpg" alt="dg4" class="w-full">
+                        <div class="w-full flex items-center justify-between">
+                            <span class="text-[11px] lg:text-xs bg-red-500 rounded-full text-white px-2 py-1">۱۳٪</span>
+                            <span class="text-sm">۱۹,۶۰۰ <span class="text-[9px]">تومان</span></span>
+                        </div>
+                        <del class="text-gray-400 text-xs mr-auto pl-6">۲۱,۰۰۰</del>
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                    مشاهده بیشتر
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+        </div>
+        <div class="p-4 lg:max-w-7xl lg:mx-auto lg:px-0">
+            <h3 class="text-sm lg:text-base flex items-center justify-between mb-6">
+                خواندنی‌ها
+                <a href="javascript:void(0)" class="text-blue-400 text-sm">مطالب بیشتر در دیجی‌کالا مگ</a>
+            </h3>
+            <div class="grid grid-cols-1 grid-rows-4 gap-3 lg:grid-cols-4 lg:grid-rows-1">
                 <a href="javascript:void(0)" class="border-[1px] border-slate-200 rounded-xl overflow-hidden">
                     <img src="assets/img/k1.jpg" alt="k1" class="w-full h-56 object-cover">
-                    <span class="text-[11px] p-4 block">بررسی گوشی Nothing Phone 1؛ طراحی خاص و چشمگیر</span>
+                    <span class="text-[11px] lg:text-xs p-4 block">بررسی گوشی Nothing Phone 1؛ طراحی خاص و چشمگیر</span>
                 </a>
                 <a href="javascript:void(0)" class="border-[1px] border-slate-200 rounded-xl overflow-hidden">
                     <img src="assets/img/k2.jpg" alt="k2" class="w-full h-56 object-cover">
-                    <span class="text-[11px] p-4 block">طرز تهیه توپک شکلات و نارگیل؛ خوشمزه و دلچسب</span>
+                    <span class="text-[11px] lg:text-xs p-4 block">طرز تهیه توپک شکلات و نارگیل؛ خوشمزه و دلچسب</span>
                 </a>
                 <a href="javascript:void(0)" class="border-[1px] border-slate-200 rounded-xl overflow-hidden">
                     <img src="assets/img/k3.png" alt="k3" class="w-full h-56 object-cover">
-                    <span class="text-[11px] p-4 block">معرفی بهترین ابزارهای طراحی سایت</span>
+                    <span class="text-[11px] lg:text-xs p-4 block">معرفی بهترین ابزارهای طراحی سایت</span>
                 </a>
                 <a href="javascript:void(0)" class="border-[1px] border-slate-200 rounded-xl overflow-hidden">
                     <img src="assets/img/k4.jpg" alt="k4" class="w-full h-56 object-cover">
-                    <span class="text-[11px] p-4 block">لوسید از خودروی الکتریکی قدرتمند Air Sapphire رونمایی کرد</span>
+                    <span class="text-[11px] lg:text-xs p-4 block">لوسید از خودروی الکتریکی قدرتمند Air Sapphire رونمایی کرد</span>
                 </a>
             </div>
         </div>
@@ -852,83 +1138,124 @@
                     <i class="fa-solid fa-angle-up"></i>
                 </button>
             </div>
-            <div class="flex flex-col gap-2">
-                <span class="text-[11px] text-gray-600">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</span>
-                <span class="text-[11px] text-gray-600">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span>
+            <div class="flex flex-col gap-2 lg:flex-row lg:gap-4">
+                <span class="text-[11px] lg:text-xs text-gray-600 lg:border-l-[1px] lg:border-gray-500 lg:pl-4">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</span>
+                <span class="text-[11px] lg:text-xs text-gray-600">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span>
             </div>
-            <div class="w-full grid grid-cols-2 grid-rows-1">
-                <div class="flex flex-col items-start justify-start gap-4">
-                    <span class="text-[14px]">با دیجی‌کالا</span>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        اتاق خبر دیجی‌کالا
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        فروش در دیجی‌کالا
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        فرصت‌های شغلی
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        گزارش تخلف در دیجی‌کالا
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        تماس با دیجی‌کالا
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        درباره دیجی‌کالا
-                    </a>
-                </div>
-                <div class="flex flex-col items-start justify-start gap-4">
-                    <span class="text-[14px]">خدمات مشتریان</span>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        پاسخ به پرسش‌های متداول
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        رویه‌های بازگرداندن کالا
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        شرایط استفاده
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        حریم خصوصی
-                    </a>
-                    <a href="javascript:void(0)" class="text-xs text-gray-500">
-                        گزارش باگ
-                    </a>
-                </div>
-            </div>
-            <div class="w-full flex items-center justify-start gap-6">
-                <span class="text-[14px]">همراه ما باشید!</span>
-                <a href="javascript:void(0)" class="mr-auto">
-                    <i class="fa-brands fa-instagram text-[27px] text-gray-400"></i>
+            <div class="hidden lg:flex items-center justify-evenly w-full text-[11px] py-6">
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
+                    <img src="assets/img/express-delivery.svg" alt="اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس" class="w-13">
+                    <span>اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس</span>
                 </a>
-                <a href="javascript:void(0)">
-                    <i class="fa-brands fa-linkedin text-[27px] text-gray-400"></i>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
+                    <img src="assets/img/cash-on-delivery.svg" alt="امکان پرداخت در محل" class="w-13">
+                    <span>امکان پرداخت در محل</span>
                 </a>
-                <a href="javascript:void(0)">
-                    <i class="fa-brands fa-twitter text-[27px] text-gray-400"></i>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
+                    <img src="assets/img/cash-on-delivery.svg" alt="۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ" class="w-13">
+                    <span>۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ</span>
                 </a>
-                <a href="javascript:void(0)">
-                    <i class="fa-brands fa-telegram text-[27px] text-gray-400"></i>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
+                    <img src="assets/img/days-return.svg" alt="هفت روز ضمانت بازگشت کالا" class="w-13">
+                    <span>هفت روز ضمانت بازگشت کالا</span>
+                </a>
+                <a href="javascript:void(0)" class="flex flex-col items-center justify-center gap-1">
+                    <img src="assets/img/original-products.svg" alt="ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ" class="w-13">
+                    <span>ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ</span>
                 </a>
             </div>
-            <div class="w-full">
-                <form action="javascript:void(0)" class="flex items-center justify-start gap-3">
-                    <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full">
-                        <input type="text" class="bg-transparent w-full outline-none text-sm p-3" placeholder="جستجو">
+            <div class="flex flex-col items-start justify-start gap-6 w-full lg:grid lg:grid-cols-4 lg:grid-row-1 lg:gap-4">
+                <div class="w-full grid grid-cols-2 grid-rows-1 lg:grid-cols-3 lg:col-span-3">
+                    <div class="flex flex-col items-start justify-start gap-4">
+                        <span class="text-[14px] lg:text-base">با دیجی‌کالا</span>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            اتاق خبر دیجی‌کالا
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            فروش در دیجی‌کالا
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            فرصت‌های شغلی
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            گزارش تخلف در دیجی‌کالا
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            تماس با دیجی‌کالا
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            درباره دیجی‌کالا
+                        </a>
                     </div>
-                    <button type="submit" disabled class="p-3 text-sm disabled:bg-gray-300 bg-[#ef394e] rounded-lg text-white">
-                        ثبت
-                    </button>
-                </form>
-                <!-- <span class="text-[10px] text-red-700">این فیلد نمی‌تواند خالی باشد</span> -->
+                    <div class="flex flex-col items-start justify-start gap-4">
+                        <span class="text-[14px] lg:text-base">خدمات مشتریان</span>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            پاسخ به پرسش‌های متداول
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            رویه‌های بازگرداندن کالا
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            شرایط استفاده
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            حریم خصوصی
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            گزارش باگ
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:gap-4">
+                        <span class="text-[14px] lg:text-base">راهنمای خرید از دیجی‌کالا</span>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            نحوه ثبت سفارش
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            رویه ارسال سفارش
+                        </a>
+                        <a href="javascript:void(0)" class="text-xs lg:text-sm text-gray-500">
+                            شیوه‌های پرداخت
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 w-full lg:col-span-1">
+                    <div class="w-full flex items-center justify-between gap-6 lg:flex-col lg:items-start">
+                        <span class="text-[14px] lg:text-base">همراه ما باشید!</span>
+                        <div class="flex items-center justify-start gap-6 lg:gap-9">
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-instagram text-[27px] text-gray-400 lg:text-4xl"></i>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-linkedin text-[27px] text-gray-400 lg:text-4xl"></i>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-twitter text-[27px] text-gray-400 lg:text-4xl"></i>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-telegram text-[27px] text-gray-400 lg:text-4xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col items-start justify-start gap-6">
+                        <span class="text-base hidden lg:inline">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</span>
+                        <form action="javascript:void(0)" class="flex items-center justify-start gap-3 w-full">
+                            <div class="bg-gray-100 rounded-lg flex items-center justify-start w-full">
+                                <input type="text" class="bg-transparent w-full outline-none text-sm p-3" placeholder="جستجو">
+                            </div>
+                            <button type="submit" disabled class="p-3 text-sm disabled:bg-gray-300 bg-[#ef394e] rounded-lg text-white">
+                                ثبت
+                            </button>
+                        </form>
+                        <!-- <span class="text-[10px] text-red-700">این فیلد نمی‌تواند خالی باشد</span> -->
+                    </div>
+                </div>
             </div>
-            <div class="bg-[#3c4b6d] rounded-lg p-3 w-full">
+            <div class="bg-[#3c4b6d] rounded-lg p-3 w-full lg:flex lg:gap-4">
                 <h4 class="flex items-center justify-center gap-3 text-white text-lg">
                     <img src="assets/img/footerlogo2.png" alt="footerlogo2" class="w-7 ">
                     دانلود اپلیکیشن دیجی‌کالا
                 </h4>
-                <div class="grid grid-cols-2 grid-rows-2 gap-4 p-4 mt-3">
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 p-4 mt-3 lg:grid-cols-4 lg:grid-rows-1 lg:mr-auto lg:p-0 lg:m-0">
                     <a href="javascript:void(0)" class="flex">
                         <img src="assets/img/google-play.svg" alt="google play" class="w-full">
                     </a>
@@ -942,66 +1269,69 @@
                         <img src="assets/img/sib-app.svg" alt="sib app" class="w-full">
                     </a>
                 </div>
-                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-white">
-                    اطلاعات بیشتر
-                    <i class="fa-solid fa-chevron-left"></i>
+                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-white lg:bg-white lg:h-11 lg:mt-0 lg:rounded lg:mr-3">
+                    <span class="lg:hidden">اطلاعات بیشتر</span>
+                    <i class="fa-solid fa-chevron-left lg:hidden"></i>
+                    <i class="fa-solid fa-ellipsis hidden lg:inline text-gray-500 px-3 text-3xl"></i>
                 </a>
             </div>
-            <div class="flex flex-col items-start justify-start gap-2 border-t-[1px] border-slate-200 pt-6">
-                <h4 class="text-xs font-bold">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
-                </p>
-                <!-- <h4 class="text-xs font-bold">کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز یا در روزهای خاصی مثل حراج شگفت انگیز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم.
-                </p>
-                <h4 class="text-xs font-bold">کالای دیجیتال</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
-                </p>
-                <h4 class="text-xs font-bold">خودرو، ابزار و تجهیزات صنعتی</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.
-                </p>
-                <h4 class="text-xs font-bold">مد و پوشاک</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
-                </p>
-                <h4 class="text-xs font-bold">ورزش و سفر</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ و کوهنوردی، ساک و قمقمه ورزشی و... در این بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر اساس نوع ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های دیجی‌کالا پیدا کنید.
-                </p>
-                <h4 class="text-xs font-bold">محصولات بومی و محلی</h4>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به سفره هفت‌سین  و پذیرایی از مهمانان در روزهای نوروز، انواع آیینه و شمعدان و هر آن چیزی را که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت مناسب و تنوع بسیار بالا انتخاب کنید. دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه کند، تقویم ۱۴۰۱، انواع ایده عکس پروفایل عید نوروز، آهنگ‌های عید نوروز و موزیک‌های شاد بهاری، وسایل مربوط به خانه‌تکانی و انواع لباس های عید  را برای شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و هوای تازه نهایت لذت را ببرید.
-                </p>
-                <p class="text-[11px] text-gray-500 leading-6">
-                    در راستای توجه ویژه به شفافیت به عنوان یکی از اصلی‌ترین ارزش‌های محوری دیجی‌کالا، با شروع سال ۱۳۹۸ داستان‌پردازی با داده‌های آماری و ارائه گزارش‌های سالانه آغاز شد. مسیری که دستاورد آن تا امروز چندین گزارش سالانه و تخصصی مثل گزارش سالانه ۱۳۹۸، گزارش سالانه ۱۳۹۹ و گزارش سالانه ۱۴۰۰  دیجی‌کالا هستند. علاوه بر این، گزارش منابع انسانی سال ۱۳۹۹، گزارش منابع انسانی سال ۱۴۰۰  و همچنین گزارش کتاب دیجی‌کالا، از دیگر گزارش‌های تخصصی دیجی‌کالا به حساب می‌آیند. انتشار این گزارش‌ها امکان رصد شفاف‌تر و دقیق‌تر خدمات دیجی‌کالا را فراهم می‌کند، وضعیت بازار آنلاین کشور را به نمایش می‌گذارد و به تمامی کسب‌وکارهای ایرانی کمک می‌کند تا با فرایندهای فروش و عرضه آنلاین کالاهای خود بیشتر آشنا شوند.
-                </p> -->
-                <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
-                    اطلاعات بیشتر
-                    <i class="fa-solid fa-chevron-left"></i>
-                </a>
+            <div class="lg:grid lg:grid-cols-12 lg:grid-rows-1 gap-6 border-y-[1px] border-slate-200 py-6">
+                <div class="flex flex-col items-start justify-start gap-2 lg:col-span-9 mb-6 lg:mb-0">
+                    <h4 class="text-xs font-bold">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                    </p>
+                    <!-- <h4 class="text-xs font-bold">کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز یا در روزهای خاصی مثل حراج شگفت انگیز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم.
+                    </p>
+                    <h4 class="text-xs font-bold">کالای دیجیتال</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+                    </p>
+                    <h4 class="text-xs font-bold">خودرو، ابزار و تجهیزات صنعتی</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.
+                    </p>
+                    <h4 class="text-xs font-bold">مد و پوشاک</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+                    </p>
+                    <h4 class="text-xs font-bold">ورزش و سفر</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ و کوهنوردی، ساک و قمقمه ورزشی و... در این بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر اساس نوع ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های دیجی‌کالا پیدا کنید.
+                    </p>
+                    <h4 class="text-xs font-bold">محصولات بومی و محلی</h4>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به سفره هفت‌سین  و پذیرایی از مهمانان در روزهای نوروز، انواع آیینه و شمعدان و هر آن چیزی را که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت مناسب و تنوع بسیار بالا انتخاب کنید. دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه کند، تقویم ۱۴۰۱، انواع ایده عکس پروفایل عید نوروز، آهنگ‌های عید نوروز و موزیک‌های شاد بهاری، وسایل مربوط به خانه‌تکانی و انواع لباس های عید  را برای شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و هوای تازه نهایت لذت را ببرید.
+                    </p>
+                    <p class="text-[11px] text-gray-500 leading-6">
+                        در راستای توجه ویژه به شفافیت به عنوان یکی از اصلی‌ترین ارزش‌های محوری دیجی‌کالا، با شروع سال ۱۳۹۸ داستان‌پردازی با داده‌های آماری و ارائه گزارش‌های سالانه آغاز شد. مسیری که دستاورد آن تا امروز چندین گزارش سالانه و تخصصی مثل گزارش سالانه ۱۳۹۸، گزارش سالانه ۱۳۹۹ و گزارش سالانه ۱۴۰۰  دیجی‌کالا هستند. علاوه بر این، گزارش منابع انسانی سال ۱۳۹۹، گزارش منابع انسانی سال ۱۴۰۰  و همچنین گزارش کتاب دیجی‌کالا، از دیگر گزارش‌های تخصصی دیجی‌کالا به حساب می‌آیند. انتشار این گزارش‌ها امکان رصد شفاف‌تر و دقیق‌تر خدمات دیجی‌کالا را فراهم می‌کند، وضعیت بازار آنلاین کشور را به نمایش می‌گذارد و به تمامی کسب‌وکارهای ایرانی کمک می‌کند تا با فرایندهای فروش و عرضه آنلاین کالاهای خود بیشتر آشنا شوند.
+                    </p> -->
+                    <a href="javascript:void(0)" class="flex justify-center items-center gap-2 mt-3 text-xs text-blue-400">
+                        اطلاعات بیشتر
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="w-full flex items-center justify-center gap-2 lg:col-span-3">
+                    <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
+                        <img src="assets/img/rezi.png" alt="rezi" class="h-20 object-cover">
+                    </a>
+                    <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
+                        <img src="assets/img/kasbokar.png" alt="kasbokar" class="h-20 object-cover">
+                    </a>
+                    <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
+                        <img src="assets/img/enamad.png" alt="enamad" class="h-20 object-cover">
+                    </a>
+                </div>
             </div>
-            <div class="w-full flex items-center justify-center gap-2 border-b-[1px] border-slate-200 pb-6">
-                <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
-                    <img src="assets/img/rezi.png" alt="rezi" class="h-20 object-cover">
-                </a>
-                <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
-                    <img src="assets/img/kasbokar.png" alt="kasbokar" class="h-20 object-cover">
-                </a>
-                <a href="javascript:void(0)" class="flex items-center justify-center h-24 w-24 p-2 rounded-lg border-[1px] border-slate-200">
-                    <img src="assets/img/enamad.png" alt="enamad" class="h-20 object-cover">
-                </a>
-            </div>
-            <p class="text-[10px] text-gray-500 leading-5">
+            <p class="text-[10px] text-gray-500 leading-5 lg:text-center lg:text-xs lg:w-full lg:pt-2 lg:pb-4">
                 برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست.
-                <br>
+                <br class="lg:hidden">
                 تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
             </p>
         </div>
-        <div class="grid grid-cols-3 grid-row-6 gap-px bg-gray-300">
+        <div class="grid grid-cols-3 grid-row-6 gap-px bg-gray-300 lg:grid-cols-8 lg:grid-rows-2">
             <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
                 <img src="assets/img/digiMehr.svg" alt="digiMehr" class="h-5 max-w-full object-contain">
             </a>
@@ -1047,7 +1377,7 @@
             <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4">
                 <img src="assets/img/digiexpress.svg" alt="digiexpress" class="h-5 max-w-full object-contain">
             </a>
-            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4 col-span-full">
+            <a href="javascript:void(0)" class="flex items-center justify-center bg-gray-100 h-20 px-4 col-span-full lg:col-span-1">
                 <img src="assets/img/digiaffiliate.svg" alt="digiaffiliate" class="h-5 max-w-full object-contain">
             </a>
         </div>
@@ -1074,7 +1404,7 @@
             </ul>
         </div>
     </div>
-    <div class="w-full h-full fixed left-0 top-0 bg-black/40 z-10 flex items-start justify-start" onclick="hidd(event)">
+    <div class="w-full h-full fixed left-0 top-0 bg-black/40 z-10 hidden items-start justify-start" onclick="hidd(event)">
         <div class="h-full w-80 bg-white p-6">
             <a href="/">
                 <img src="assets/img/digi.svg" alt="digi" class="h-6">
