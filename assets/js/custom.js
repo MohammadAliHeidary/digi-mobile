@@ -11,10 +11,6 @@ var swiper = new Swiper(".top-slider", {
 var productSlider = new Swiper(".product-slider", {
     pagination: {
         el: ".product-slider-pagination",
-    },
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
     }
 });
 
